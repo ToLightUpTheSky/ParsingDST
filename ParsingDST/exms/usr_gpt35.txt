@@ -1,0 +1,73 @@
+translate user message to JSON: 
+
+data format of JSON: 
+
+input message: 
+user: "..." 
+output JSON: 
+{"user": {"reject": {domain: [slot]}, "request": {domain: {slot: [value]}}}} 
+[END] 
+
+domain, slot, value are string type from message 
+domain, slot, value must from message 
+domain, slot, value are not in JSON if not in message 
+domain in ["train", "taxi", "restaurant", "lodging", "attraction"] 
+
+example: 
+context: 
+...
+input message: 
+user: "i want a place to eat . in the city centre . with cheap price" 
+output JSON: 
+{"user": {"reject": {}, "request": {"restaurant": {"direction": ["centre"], "price_range": ["cheap"]}}}} 
+[END] 
+
+example: 
+context: 
+...
+input message: 
+user: "no particular food type" 
+output JSON: 
+{"user": {"reject": {}, "request": {"restaurant": {"cuisine": ["any"]}}}} 
+[END] 
+
+example: 
+context: 
+...
+{"system": {"not_avaliable": {}, "info": {}, "ask_for": {"restaurant": ["price_range", "cuisine"]}}} 
+input message: 
+user: "no , i am not picky as long as it book for 4 on sunday" 
+output JSON: 
+{"user": {"reject": {}, "request": {"restaurant": {"price_range": ["any"], "cuisine": ["any"], "num_people": ["4"], "week_day": ["sunday"]}}}} 
+[END] 
+
+example: 
+context: 
+...
+input message: 
+user: "i want to be in the east of town . can i get their phone number and address please" 
+output JSON: 
+{"user": {"reject": {}, "request": {"restaurant": {"direction": ["east"], "phone_number": [], "address": []}}}} 
+[END] 
+
+example: 
+context: 
+...
+input message: 
+user: "nusha is not a restaurant but an attraction" 
+output JSON: 
+{"user": {"reject": {"restaurant": ["full_name"]}, "request": {"attraction": {"full_name": ["nusha"]}}}} 
+[END] 
+
+[EXM] 
+
+[DM] 
+[ST] 
+[KW] 
+
+example: 
+context: 
+[PREDIC] 
+input message: 
+[DIALOG] 
+output JSON: 

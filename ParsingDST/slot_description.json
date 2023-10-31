@@ -1,0 +1,398 @@
+{
+    "hotel-name": {
+        "description_human": "name of the hotel",
+        "values": [],
+        "naive": "name of the hotel",
+        "question": "What is the name of the hotel that the user in interested in?",
+        "slottype": "name of the hotel. slot's value is selected from the dialogue.",
+        "examples": "i want a hotel, named, [v]",
+        "entity": "True"
+    },
+    "hotel-type": {
+        "description_human": "what is the type of the hotel",
+        "values": [
+            "guesthouse",
+            "hotel"
+        ],
+        "naive": "type of the hotel",
+        "question": "What is the type of the hotel that the user in interested in?",
+        "slottype": "type of the hotel. slot's value is selected from: guesthouse, hotel.",
+        "examples": "i want a hotel, type, is [v]",
+        "entity": "True"
+    },
+    "hotel-area": {
+        "description_human": "area or place of the hotel",
+        "values": [
+            "centre",
+            "east",
+            "north",
+            "south",
+            "west"
+        ],
+        "naive": "area of the hotel",
+        "question": "What is the area of the hotel that the user in interested in?",
+        "slottype": "area of the hotel in. slot's value is selected from: centre, east, north, south, west.",
+        "examples": "i want a hotel, in, the [v]",
+        "entity": "False"
+    },
+    "hotel-pricerange": {
+        "description_human": "price budget of the hotel",
+        "values": [
+            "affordable",
+            "cheap",
+            "expensive",
+            "moderate"
+        ],
+        "naive": "price range of the hotel",
+        "question": "What is the pricerange of the hotel that the user in interested in?",
+        "slottype": "price range of the hotel. slot's value is selected from: cheap, moderate, expensive.",
+        "examples": "i want a hotel, with, [v] price",
+        "entity": "False"
+    },
+    "hotel-parking": {
+        "description_human": "whether the hotel has parking",
+        "values": [
+            "free",
+            "no",
+            "yes"
+        ],
+        "naive": "parking of the hotel",
+        "question": "What is the parking of the hotel that the user in interested in?",
+        "slottype": "whether have parking in the hotel. slot's value is selected from: yes, no, free.",
+        "examples": "i want a hotel, has, [v] parking",
+        "entity": "False"
+    },
+    "hotel-stars": {
+        "description_human": "star rating of the hotel",
+        "values": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+        ],
+        "naive": "stars of the hotel",
+        "question": "What is the stars of the hotel that the user in interested in?",
+        "slottype": "number of star rating of the hotel. slot's value is selected from: 0, 1, 2, 3, 4, 5.",
+        "examples": "i want a hotel, with, [v] stars",
+        "entity": "False"
+    },
+    "hotel-internet": {
+        "description_human": "whether the hotel has internet",
+        "values": [
+            "free",
+            "no",
+            "yes"
+        ],
+        "naive": "internet of the hotel",
+        "question": "What is the internet of the hotel that the user in interested in?",
+        "slottype": "whether have internet in the hotel. slot's value is selected from: yes, no.",
+        "examples": "i want a hotel, has, [v] internet",
+        "entity": "False"
+    },
+    "hotel-book stay": {
+        "description_human": "length of stay at the hotel",
+        "values": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8"
+        ],
+        "naive": "stay for the hotel booking",
+        "question": "What is the book stay of the hotel that the user in interested in?",
+        "slottype": "number of nights/days stay for the hotel booking. slot's value is selected from: 1, 2, ... ect.",
+        "examples": "i want a hotel, book, for [v] days/nights",
+        "entity": "False"
+    },
+    "hotel-book day": {
+        "description_human": "day of the hotel booking",
+        "values": [
+            "friday",
+            "monday",
+            "saturday",
+            "sunday",
+            "thursday",
+            "tuesday",
+            "wednesday"
+        ],
+        "naive": "day for the hotel booking",
+        "question": "What is the book day of the hotel that the user in interested in?",
+        "slottype": "day of the hotel booking on. slot's value is selected from: monday, tuesday, ... ect.",
+        "examples": "i want a hotel, book, on [v]",
+        "entity": "False"
+    },
+    "hotel-book people": {
+        "description_human": "number of people for the hotel booking",
+        "values": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8"
+        ],
+        "naive": "people for the hotel booking",
+        "question": "What is the book people of the hotel that the user in interested in?",
+        "slottype": "number of people for the hotel booking. slot's value is selected from: 1, 2, ... ect.",
+        "examples": "i want a hotel, book, for [v] people/seats",
+        "entity": "False"
+    },
+    "train-book people": {
+        "description_human": "how many train tickets you need",
+        "values": [
+            "0",
+            "1",
+            "10",
+            "15",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9"
+        ],
+        "naive": "people for the train booking",
+        "question": "What is the book people of the train that the user in interested in?",
+        "slottype": "number of people/tickets for the train booking. slot's value is selected from: 1, 2, ... ect.",
+        "examples": "i want a train, book, for [v] people/tickets",
+        "entity": "False"
+    },
+    "train-destination": {
+        "description_human": "destination of the train",
+        "values": [],
+        "naive": "destination of the train",
+        "question": "What is the destination of the train that the user in interested in?",
+        "slottype": "destination name of the train go to/arrive at. slot's value is selected from the dialogue.",
+        "examples": "i want a train, arrive, at [v]",
+        "entity": "True"
+    },
+    "train-day": {
+        "description_human": "day of the train",
+        "values": [
+            "friday",
+            "monday",
+            "saturday",
+            "sunday",
+            "thursday",
+            "tuesday",
+            "wednesday"
+        ],
+        "naive": "day of the train",
+        "question": "What is the day of the train that the user in interested in?",
+        "slottype": "day of the train depart/leave on. slot's value is selected from: monday, tuesday, ... ect.",
+        "examples": "i want a train, leave, on [v]",
+        "entity": "False"
+    },
+    "train-departure": {
+        "description_human": "departure location of the train",
+        "values": [],
+        "naive": "departure of the train",
+        "question": "What is the departure of the train that the user in interested in?",
+        "slottype": "departure name of the train depart/leave from. slot's value is selected from the dialogue.",
+        "examples": "i want a train, leave, from [v]",
+        "entity": "True"
+    },
+    "train-leaveat": {
+        "description_human": "leaving time for the train",
+        "values": [],
+        "naive": "leave at of the train",
+        "question": "What is the leaveat of the train that the user in interested in?",
+        "slottype": "time of the train leave at. slot's value is selected from the dialogue.",
+        "examples": "i want a train, leave, at [v]",
+        "entity": "False"
+    },
+    "train-arriveby": {
+        "description_human": "arrival time of the train",
+        "values": [],
+        "naive": "arrive by of the train",
+        "question": "What is the arriveby of the train that the user in interested in?",
+        "slottype": "time of the train arrive by. slot's value is selected from the dialogue.",
+        "examples": "i want a train, arrive, by [v]",
+        "entity": "False"
+    },
+    "restaurant-name": {
+        "description_human": "name of the restaurant",
+        "values": [],
+        "naive": "name of the restaurant",
+        "question": "What is the name of the restaurant that the user in interested in?",
+        "slottype": "name of the restaurant. slot's value is selected from the dialogue.",
+        "examples": "i want a restaurant, named, [v]",
+        "entity": "True"
+    },
+    "restaurant-food": {
+        "description_human": "the cuisine of the restaurant you are looking for",
+        "values": [],
+        "naive": "food of the restaurant",
+        "question": "What is the food of the restaurant that the user in interested in?",
+        "slottype": "type of food of the restaurant. slot's value is selected from the dialogue.",
+        "examples": "i want a restaurant, with, [v] food",
+        "entity": "True"
+    },
+    "restaurant-pricerange": {
+        "description_human": "price budget for the restaurant",
+        "values": [
+            "cheap",
+            "affordable",
+            "expensive",
+            "moderate"
+        ],
+        "naive": "price range of the restaurant",
+        "question": "What is the pricerange of the restaurant that the user in interested in?",
+        "slottype": "price range of the restaurant. slot's value is selected from: cheap, moderate, expensive.",
+        "examples": "i want a restaurant, with, [v] price",
+        "entity": "False"
+    },
+    "restaurant-area": {
+        "description_human": "area or place of the restaurant",
+        "values": [
+            "centre",
+            "east",
+            "north",
+            "south",
+            "west"
+        ],
+        "naive": "area of the restaurant",
+        "question": "What is the area of the restaurant that the user in interested in?",
+        "slottype": "area of the restaurant. slot's value is selected from: centre, east, north, south, west.",
+        "examples": "i want a restaurant, in, the [v]",
+        "entity": "False"
+    },
+    "restaurant-book time": {
+        "description_human": "time of the restaurant booking",
+        "values": [],
+        "naive": "time for the restaurant booking",
+        "question": "What is the book time of the restaurant that the user in interested in?",
+        "slottype": "time of the restaurant booking at. slot's value is selected from the dialogue.",
+        "examples": "i want a restaurant, book, at [v]",
+        "entity": "False"
+    },
+    "restaurant-book day": {
+        "description_human": "day of the restaurant booking",
+        "values": [
+            "friday",
+            "monday",
+            "saturday",
+            "sunday",
+            "thursday",
+            "tuesday",
+            "wednesday"
+        ],
+        "naive": "day for the restaurant booking",
+        "question": "What is the book day of the restaurant that the user in interested in?",
+        "slottype": "day of the restaurant booking on. slot's value is selected from: monday, tuesday, ... ect.",
+        "examples": "i want a restaurant, book, on [v]",
+        "entity": "False"
+    },
+    "restaurant-book people": {
+        "description_human": "how many people for the restaurant reservation",
+        "values": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8"
+        ],
+        "naive": "people for the restaurant booking",
+        "question": "What is the book people of the restaurant that the user in interested in?",
+        "slottype": "number of people/seats for the restaurant booking. slot's value is selected from: 1, 2, ... ect.",
+        "examples": "i want a restaurant, book, for [v] people",
+        "entity": "False"
+    },
+    "attraction-name": {
+        "description_human": "name of the attraction",
+        "values": [],
+        "naive": "name of the attraction",
+        "question": "What is the name of the attraction that the user in interested in?",
+        "slottype": "name of the attraction. slot's value is selected from the dialogue.",
+        "examples": "i want a attraction, named, [v]",
+        "entity": "True"
+    },
+    "attraction-type": {
+        "description_human": "type of the attraction",
+        "values": [
+            "architecture",
+            "boat",
+            "church",
+            "cinema",
+            "college",
+            "concerthall",
+            "entertainment",
+            "hotspot",
+            "multiple sports",
+            "museum",
+            "nightclub",
+            "park",
+            "special",
+            "swimmingpool",
+            "theatre"
+        ],
+        "naive": "type of the attraction",
+        "question": "What is the type of the attraction that the user in interested in?",
+        "slottype": "type of the attraction. slot's value is selected from: church, college, ... ect.",
+        "examples": "i want a attraction, type, is [v]",
+        "entity": "True"
+    },
+    "attraction-area": {
+        "description_human": "area to search for attractions",
+        "values": [
+            "centre",
+            "east",
+            "north",
+            "south",
+            "west"
+        ],
+        "naive": "area of the attraction",
+        "question": "What is the area of the attraction that the user in interested in?",
+        "slottype": "area of the attraction in. slot's value is selected from: centre, east, north, south, west.",
+        "examples": "i want a attraction, in, the [v]",
+        "entity": "False"
+    },
+    "taxi-destination": {
+        "description_human": "destination of taxi",
+        "values": [],
+        "naive": "destination of the taxi",
+        "question": "What is the destination of the taxi that the user in interested in?",
+        "slottype": "destination name of the taxi go to/arrive at. slot's value is selected from the dialogue.",
+        "examples": "i want a taxi, arrive, at [v]",
+        "entity": "True"
+    },
+    "taxi-departure": {
+        "description_human": "departure location of taxi",
+        "values": [],
+        "naive": "departure of the taxi",
+        "question": "What is the departure of the taxi that the user in interested in?",
+        "slottype": "departure name of the taxi depart/leave from. slot's value is selected from the dialogue.",
+        "examples": "i want a taxi, leave, from [v]",
+        "entity": "True"
+    },
+    "taxi-leaveat": {
+        "description_human": "leaving time of taxi",
+        "values": [],
+        "naive": "leave at of the taxi",
+        "question": "What is the leaveat of the taxi that the user in interested in?",
+        "slottype": "time of the taxi leave at. slot's value is selected from the dialogue.",
+        "examples": "i want a taxi, leave, at [v]",
+        "entity": "False"
+    },
+    "taxi-arriveby": {
+        "description_human": "arrival time of taxi",
+        "values": [],
+        "naive": "arrive by of the taxi",
+        "question": "What is the arriveby of the taxi that the user in interested in?",
+        "slottype": "time of the taxi arrive by. slot's value is selected from the dialogue.",
+        "examples": "i want a taxi, arrive, by [v]",
+        "entity": "False"
+    }
+}

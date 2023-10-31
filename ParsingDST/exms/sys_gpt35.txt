@@ -1,0 +1,79 @@
+translate system message to JSON: 
+
+data format of JSON: 
+
+input message: 
+system: "..." 
+output JSON: 
+{"system": {"not_available": {domain: {slot: [value]}}, "info": {domain: {slot: [value]}}, "ask_for": {domain: [slot]}}} 
+[END] 
+
+domain, slot, value are string type from message 
+domain, slot, value are not in JSON if not in message 
+domain, slot, value are empty if not in message 
+domain in ["train", "taxi", "restaurant", "lodging", "attraction"] 
+
+example: 
+context: 
+...
+input message: 
+system: "the booking for restaurant at 10:00 on sunday was successful" 
+output JSON: 
+{"system": {"not_available": {}, "info": {"restaurant": {"clock_book": ["10:00"], "week_day": ["sunday"]}}, "ask_for": {}}} 
+[END] 
+
+example: 
+context: 
+...
+input message: 
+system: "it is a chinese restaurant in the centre" 
+output JSON: 
+{"system": {"not_available": {}, "info": {"cuisine": ["chinese"], "direction": ["centre"]}, "ask_for": {}}} 
+[END] 
+
+example: 
+context: 
+...
+input message: 
+system: "how about abc restaurant in the city centre" 
+output JSON: 
+{"system": {"not_available": {}, "info": {"restaurant": {"full_name": ["abc restaurant"], "direction": ["centre"]}}, "ask_for": {}}} 
+[END] 
+
+example: 
+context: 
+...
+input message: 
+system: "how about the part of the area and food type for the restaurant" 
+output JSON: 
+{"system": {"not_available": {}, "info": {}, "ask_for": {"restaurant": ["direction", "cuisine"]}}} 
+[END] 
+
+example: 
+context: 
+...
+input message: 
+system: "do you need certain price range or part of area for restaurant" 
+output JSON: 
+{"system": {"not_available": {}, "info": {}, "ask_for": {"restaurant": ["price_range", "direction"]}}} 
+[END] 
+
+example: 
+context: 
+...
+input message: 
+system: "sorry i can not book restaurant nusa for you . i can only find nandos" 
+output JSON: 
+{"system": {"not_available": {"restaurant": {"full_name": ["nusha"]}}, "info": {"restaurant": {"full_name": ["nandos"]}}, "ask_for": {}}} 
+[END] 
+
+[DM] 
+[ST] 
+[KW] 
+
+example: 
+context: 
+[PREDIC] 
+input message: 
+[DIALOG] 
+output JSON: 

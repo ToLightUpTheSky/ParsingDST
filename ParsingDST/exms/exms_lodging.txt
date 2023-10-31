@@ -1,0 +1,17 @@
+example: 
+input context: 
+...
+input dialogue: 
+user: "i want a college and a hotel" 
+output JSON: 
+{"user": {"reject": {}, "request": {"attraction": {"attraction_type": ["college"]}, "lodging": {"lodging_type": ["hotel"]}}}} 
+[END] 
+
+example: 
+input context: 
+...
+input dialogue: 
+user: "i want to go to the downing college and the ashley hotel" 
+output JSON: 
+{"user": {"reject": {}, "request": {"attraction": {"attraction_type": ["college"], "full_name": ["downing college"]}, "lodging": {"lodging_type": ["hotel"], "full_name": ["ashley hotel"]}}}} 
+[END] 

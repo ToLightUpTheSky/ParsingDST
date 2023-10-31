@@ -1,0 +1,27 @@
+example: 
+input context: 
+...
+input dialogue: 
+user: "i want a taxi from XXX at 9:00 to YYY by 14:00" 
+output JSON: 
+{"user": {"reject": {}, "request": {"taxi": {"departure": ["XXX"], "clock_leave_at": ["09:00"], "destination": ["YYY"], "clock_arrive_by": ["14:00"]}}}} 
+[END] 
+
+example: 
+input context: 
+...
+input dialogue: 
+user: "i want a taxi leave from XXX , arrive at YYY " 
+output JSON: 
+{"user": {"reject": {}, "request": {"departure": ["XXX"], "destination": ["YYY"]}}}} 
+[END] 
+
+example: 
+input context: 
+...
+{"system": {"not_avaliable": {}, "info": {"lodging": {"full_name": ["acron guest house"], "direction": ["centre"]}, "attraction": {"full_name": ["christ college"]}}, "ask_for": {}}} 
+input dialogue: 
+user: "yes and i need a taxi to cummute" 
+output JSON: 
+{"user": {"reject": {}, "request": {"departure": ["acron guest house"], "destination": ["christ college"]}}} 
+[END] 

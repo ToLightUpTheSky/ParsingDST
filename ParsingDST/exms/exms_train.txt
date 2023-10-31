@@ -1,0 +1,17 @@
+example: 
+input context: 
+...
+input dialogue: 
+user: "i want a train for 2 on sunday . from cambridge station at 07:00 to norwich station by 21:00" 
+output JSON: 
+{"user": {"reject": {}, "request": {"taxi": {"num_people": ["2"], "week_day": ["sunday"], "departure": ["cambridge"], "clock_leave_at": ["07:00"], "destination": ["norwich"], "clock_arrive_by": ["21:00"]}}}} 
+[END] 
+
+example: 
+input context: 
+...
+input dialogue: 
+user: "i want a train . leave from cambridge station . arrive at norwich station" 
+output JSON: 
+{"user": {"reject": {}, "request": {"departure": ["cambridge"], "destination": ["norwich"]}}}} 
+[END] 
