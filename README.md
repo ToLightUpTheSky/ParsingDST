@@ -1,4 +1,4 @@
-# ParsingDST: a new ICL(In-context Learning) method that parsing dialogue as an intermediatestate JSON state
+# ParsingDST: an framework of In-context Learning that parsing dialogue as an intermediatestate state for DST
 
 This is the pytorch implementation of
 **Semantic Parsing by Large Language Models for Intricate Updating Strategies of Zero-Shot Dialogue State Tracking**. 
