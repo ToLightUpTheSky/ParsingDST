@@ -44,7 +44,7 @@ All the processed data will be saved in the `data` folder.
 ### Zero-shot experiment
 Run the zero-shot experiment on MultiWOZ 2.1 by
 ```console
-python run_zeroshot_codex_experiment.py --output_dir ./expts/zero-shot --mwz_ver 2.1
+python run_zeroshot_experiment.py --output_dir ./expts/zero-shot --mwz_ver 2.1
 ```
 
 ### Analyze using the running log
@@ -52,7 +52,7 @@ Notice that the only difference between MultiWOZ 2.1 and 2.4 are the labels of d
 
 Get the per-domain result on MultiWOZ 2.1 by
 ```console
-python evaluate_run_log_by_domain.py --running_log expts/codex_5p_v2/running_log.json --test_fn data/mw24_100p_test.json --mwz_ver 2.1
+python evaluate_run_log_by_domain.py --running_log expts/zero-shot/running_log.json --test_fn data/mw24_100p_test.json --mwz_ver 2.1
 ```
 
 To get result on MultiWOZ 2.4, change to `--mwz_ver 2.4`.
