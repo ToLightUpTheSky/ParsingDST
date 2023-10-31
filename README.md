@@ -19,7 +19,7 @@ Please use the bibtex below:
 ## Environment
 Install PyTorch, Huggingface transformers, and openai.
 
-(optional) Put your OpenAI API key in `config.py` to use ChatGPT.
+(optional) Put your OpenAI API key in `config.py` to use ChatGPT and else models.
 
 ## Data
 We follow the pipeline of [MultiWoz 2.4 repo](https://github.com/smartyfh/MultiWOZ2.4/) for data preprocessing.
