@@ -39,7 +39,7 @@ All the processed data will be saved in the `data` folder.
 ./preprocess.sh
 ```
 
-## 🎯 In-Context Learning Experiments
+## 📋 In-Context Learning Experiments
 ### Zero-shot experiment
 Run the zero-shot experiment on MultiWOZ 2.1 by
 ```console
