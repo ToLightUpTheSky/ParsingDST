@@ -5,6 +5,8 @@ This is the pytorch implementation of
 **Semantic Parsing by Large Language Models for Intricate Updating Strategies of Zero-Shot Dialogue State Tracking**. 
 [[PDF]](https://arxiv.org/abs/2310.10520), which is accepted to the **Findings of EMNLP 2023 (Short Paper)**.
 
+<img width="891" alt="image" src="https://github.com/ToLightUpTheSky/ParsingDST/assets/60767110/7381b261-fbe7-4185-8ce6-f74ff1f903d5">
+
 If you find this repo helpful, please cite the following paper:
 <pre>
 @article{wu2023semantic,
@@ -15,9 +17,7 @@ If you find this repo helpful, please cite the following paper:
 }
 </pre>
 
-## 🎥 Overall Framework and Environment
-
-<img width="891" alt="image" src="https://github.com/ToLightUpTheSky/ParsingDST/assets/60767110/7381b261-fbe7-4185-8ce6-f74ff1f903d5">
+## 🎥 Environment
 
 Pleas install **PyTorch, Huggingface transformers, and openai**.
 
