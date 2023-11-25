@@ -14,12 +14,12 @@ If you find this repo helpful, please cite the following paper:
 }
 </pre>
 
-## Environment
+## 🎥 Environment
 Install PyTorch, Huggingface transformers, and openai.
 
 (optional) Put your OpenAI API key in `config.py` to use ChatGPT and else models.
 
-## Data
+## 🍯 Data
 We follow the pipeline of [MultiWoz 2.4 repo](https://github.com/smartyfh/MultiWOZ2.4/) for data preprocessing.
 We modified a bit to unify the ontology between MultiWOZ 2.1 and 2.4
 To download and create the dataset
@@ -29,7 +29,7 @@ python create_data.py --main_dir mwz21 --mwz_ver 2.1 --target_path mwz2.1  # for
 python create_data.py --main_dir mwz24 --mwz_ver 2.4 --target_path mwz2.4  # for MultiWOZ 2.4
 ```
 
-### preprocess the dataset
+### 🎯 preprocess the dataset
 Run the following script to sample and preprocess the few-shot and full-shot training sets, dev set and test set. 
 For few-shot experiments, the retriever is trained on the selection pool. So we have save the selection pool for each of the experiment.
 `data/sample.py` samples and processes the training sets.
@@ -38,7 +38,7 @@ All the processed data will be saved in the `data` folder.
 ./preprocess.sh
 ```
 
-## In-Context Learning Experiments
+## 🎯 In-Context Learning Experiments
 ### Zero-shot experiment
 Run the zero-shot experiment on MultiWOZ 2.1 by
 ```console
