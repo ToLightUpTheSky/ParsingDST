@@ -15,7 +15,10 @@ If you find this repo helpful, please cite the following paper:
 }
 </pre>
 
-## 🎥 Environment
+## 🎥 Overall Framework and Environment
+
+<img width="891" alt="image" src="https://github.com/ToLightUpTheSky/ParsingDST/assets/60767110/7381b261-fbe7-4185-8ce6-f74ff1f903d5">
+
 Install PyTorch, Huggingface transformers, and openai.
 
 (optional) Put your OpenAI API key in `config.py` to use ChatGPT and else models.
