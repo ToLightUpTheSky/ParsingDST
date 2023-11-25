@@ -6,7 +6,7 @@ This is the pytorch implementation of
 
 Findings of EMNLP 2023. Short Paper
 
-Please use the bibtex below:
+If you find this repo helpful, please cite the following paper:
 <pre>
 @article{wu2023semantic,
   title={Semantic Parsing by Large Language Models for Intricate Updating Strategies of Zero-Shot Dialogue State Tracking},
