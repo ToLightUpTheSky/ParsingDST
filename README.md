@@ -8,14 +8,14 @@ This is the pytorch implementation of
 <img width="891" alt="image" src="https://github.com/ToLightUpTheSky/ParsingDST/assets/60767110/7381b261-fbe7-4185-8ce6-f74ff1f903d5">
 
 If you find this repo helpful, please cite the following paper:
-,,,bibtex
+```bibtex
 @article{wu2023semantic,
   title={Semantic Parsing by Large Language Models for Intricate Updating Strategies of Zero-Shot Dialogue State Tracking},
   author={Wu, Yuxiang and Dong, Guanting and Xu, Weiran},
   journal={arXiv preprint arXiv:2310.10520},
   year={2023}
 }
-,,,
+```
 
 ## 🎥 Environment
 
